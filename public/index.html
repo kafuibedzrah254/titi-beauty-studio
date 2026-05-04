@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nail Studio Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<div class="navbar"></div>
+<div class="hero">
+  <video autoplay muted loop id="bgVideo">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h1>Luxury Nail Studio 💅</h1>
+    <p>Book your perfect nail experience</p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+<div class="cards">
+  <div class="card">Lash Extensions</div>
+  <div class="card">Pedicure</div>
+  <div class="card">Manicure</div>
+  <div class="card">Acrylic Nails</div>
+  <div class="card">Stick On Nails</div>
+</div></section>
+
+<!-- BOOKING -->
+<section class="booking">
+  <h2>Book Appointment</h2>
+
+  <input id="name" placeholder="Your Name">
+
+  <select id="service">
+    <option>Gel Nails</option>
+    <option>Acrylic Nails</option>
+    <option>Pedicure</option>
+  </select>
+
+  <input type="date" id="date">
+  <input type="time" id="time">
+
+  <button onclick="book()">Book Now</button>
+  <p id="msg"></p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Our Work</h2>
+
+  <div class="gallery-grid">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <video controls src="vid1.mp4"></video>
+    <video controls src="vid2.mp4"></video>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
